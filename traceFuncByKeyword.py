@@ -198,8 +198,8 @@ class TraceFuncByKeywordPlugin(idaapi.plugin_t):
         插件的主要执行逻辑。
         """
         print("\n运行 TraceFuncByKeyword 插件!")
-        keyword = self.ida_helper.ask_str("md5,sha|sign", 0,
-                                          "输入关键词, e.g. 'md5,sha|sign' 或 're:^sign'")
+        keyword = self.ida_helper.ask_str("", 0,
+                                          "输入关键词, e.g. 'encrypt,crypto|md5,sha,aes,rsa|sign,hash'")
         if not keyword:
             print("未输入关键词，退出。")
             return
