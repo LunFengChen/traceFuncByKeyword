@@ -5,10 +5,10 @@
 
 
 ## 过滤规则示例
-链式过滤规则, `,`表示或, `|`表示且(过滤), 以encrypt,crypto|md5,sha,aes,rsa|sign,hash为例：
-- 先过滤包含`encrypt`或`crypto`的函数
-- 再从上一步结果中，过滤包含`md5`或`sha`或`aes`或`rsa`的函数
-- 再从上一步结果中，过滤包含`sign`或`hash`的函数
+链式过滤规则, `,`表示或, `|`表示且(过滤), 以`encrypt,crypto|md5,sha,aes,rsa|sign,hash`为例：
+1. 先过滤包含`encrypt`或`crypto`的函数
+2. 再从上一步结果中，过滤包含`md5`或`sha`或`aes`或`rsa`的函数
+3. 再从上一步结果中，过滤包含`sign`或`hash`的函数
 
 ---
 
